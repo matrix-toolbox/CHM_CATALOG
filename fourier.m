@@ -1,5 +1,6 @@
 % 20170217
 % name[at]alumni.uj.edu.pl, name = w.bruzda
+% https://github.com/matrix-tool/
 
 function F = fourier(N, METHOD)
     switch METHOD
