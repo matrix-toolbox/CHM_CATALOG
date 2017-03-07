@@ -1,5 +1,5 @@
 % 20170117
-% name[at]alumni.uj.edu.pl, name = w.bruzda
+% name[at]alumni.uj.edu.pl where name = w.bruzda
 % https://github.com/matrix-tool/
 
 % fourier.m "unit test"
