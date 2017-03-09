@@ -1,5 +1,5 @@
 % 20160606
-% W. Bruzda, name[at]alumni.uj.edu.pl | name = w.bruzda
+% W. Bruzda, name[at]alumni.uj.edu.pl : name = w.bruzda
 % http://chaos.if.uj.edu.pl/~karol/hadamard/
 % https://github.com/matrix-toolbox/
 
@@ -8,6 +8,7 @@
 
 % Courtesy of Veit Elser. Unpublished notes, 2011.
 
+% >> version % 9.1.0.441655 (R2016b)
 % >> SIGMA = 1 % 2, 3 or 4
 % >> H = V8_0_SIGMA(SIGMA)
 % >> abs(H .* H'), norm(H * H' - 8 * eye(8), 'fro')

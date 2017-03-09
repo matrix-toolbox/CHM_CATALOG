@@ -1,5 +1,5 @@
 % 20170308
-% W. Bruzda, name[at]alumni.uj.edu.pl | name = w.bruzda
+% W. Bruzda, name[at]alumni.uj.edu.pl : name = w.bruzda
 % http://chaos.if.uj.edu.pl/~karol/hadamard/
 % https://github.com/matrix-toolbox/
 
@@ -12,12 +12,13 @@
 
 % >> defect(H, 'S', 1e-6); % matrix Q7 is isolated
 
-% H = Q7_0;
-% abs(H .* H'), norm(H * H' - 7 * eye(7), 'fro')
+% >> version % 9.1.0.441655 (R2016b)
+% >> H = Q7_0;
+% >> abs(H .* H'), norm(H * H' - 7 * eye(7), 'fro')
 
 function H = Q7_0
 
-    format long;
+    N = 7;
     c = 1993741;
     alpha = (40169 / 3) + (50 * sqrt(c) / 3) * cos(acos(2731019453 * sqrt(c) / (c)^2) / 3 - 4 * pi / 3);
 
@@ -37,16 +38,12 @@ function H = Q7_0
     k = 1 : 6;
     z(k) = rk(k) / 2 + i * sqrt(1 - rk(k).^2 / 4)
     x = [ z(1) z(3) z(2)' z(4) z(5)' z(6)' ]; % circulant generator of Q7 core
-    Q7_core = [
-        x;
-        circshift(x, 5);
-        circshift(x, 4);
-        circshift(x, 3);
-        circshift(x, 2);
-        circshift(x, 1);
-    ];
+    Q7_core = [];
+    for k = 0 : N - 2
+        Q7_core = [ Q7_core; circshift(x, k) ];
+    end
 
-    H = [ ones(1, 7);
-          ones(6, 1), Q7_core ];
+    H = [ ones(1, N);
+          ones(N - 1, 1), Q7_core ];
 end
 

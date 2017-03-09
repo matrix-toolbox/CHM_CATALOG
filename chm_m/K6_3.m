@@ -3,6 +3,7 @@
 % http://chaos.if.uj.edu.pl/~karol/hadamard/
 % https://github.com/matrix-toolbox/
 
+% >> version % 9.1.0.441655 (R2016b)
 % >> H = K6_3(rand(1, 3))
 % >> abs(H .* H'), norm(H * H' - 6 * eye(6), 'fro')
 

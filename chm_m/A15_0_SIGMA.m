@@ -3,6 +3,7 @@
 % http://chaos.if.uj.edu.pl/~karol/hadamard/
 % https://github.com/matrix-toolbox/
 
+% >> version % 9.1.0.441655 (R2016b)
 % >> SIGMA = 1 % 2 3 ... 8
 % >> H = A15_0_SIGMA(SIGMA)
 % >> abs(H .* H'), norm(H * H' - 15 * eye(15), 'fro')

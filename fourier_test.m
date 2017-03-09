@@ -1,10 +1,11 @@
 % 20170117
-% name[at]alumni.uj.edu.pl where name = w.bruzda
+% W. Bruzda, name[at]alumni.uj.edu.pl : name = w.bruzda
+% http://chaos.if.uj.edu.pl/~karol/hadamard/
 % https://github.com/matrix-tool/
 
 % fourier.m "unit test"
 
-% usage:
+% >> version % 9.1.0.441655 (R2016b)
 % >> result = runtests('fourier_test')
 % >> rt = table(result)
 

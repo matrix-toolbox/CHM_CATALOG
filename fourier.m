@@ -1,15 +1,20 @@
 % 20170217
-% name[at]alumni.uj.edu.pl where name = w.bruzda
+% W. Bruzda, name[at]alumni.uj.edu.pl : name = w.bruzda
+% http://chaos.if.uj.edu.pl/~karol/hadamard/
 % https://github.com/matrix-tool/
+
+% >> version % 9.1.0.441655 (R2016b)
+% >> F16 = fourier(16, 'classic');
+% >> H25 = fourier(5, 'hermitian'); % squared dimension!
 
 function F = fourier(N, METHOD)
     switch METHOD
-    case 'classic'
-        F = fourier_classic(N);
-    case 'hermitian'
-        F = fourier_h(N);
-    otherwise
-        error('Not implemented!');
+        case 'classic'
+            F = fourier_classic(N);
+        case 'hermitian'
+            F = fourier_h(N);
+        otherwise
+            error('Not implemented! Usage: >> fourier(N, <''classic'' | ''hermitian''>)');
     end
 end
 

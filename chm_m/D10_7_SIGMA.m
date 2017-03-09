@@ -1,13 +1,14 @@
 % 20170308
-% W. Bruzda, name[at]alumni.uj.edu.pl | name = w.bruzda
+% W. Bruzda, name[at]alumni.uj.edu.pl : name = w.bruzda
 % http://chaos.if.uj.edu.pl/~karol/hadamard/
 % https://github.com/matrix-toolbox/
 
-% >> % omega is a root of the equation: w^2 + w + 1 = 0
-% >> H = D10_8(omega, parameter)
+% >> version % 9.1.0.441655 (R2016b)
+% >> SIGMA = 1 % or 2
+% >> H = D10_7_SIGMA(SIGMA, parameter)
 % >> abs(H .* H'), norm(H * H' - 10 * eye(10), 'fro')
 
-function H = D10_8(omega, parameter)
+function H = D10_7_SIGMA(SIGMA, parameter)
 
     try
         a = parameter(1, 1);
@@ -28,11 +29,14 @@ function H = D10_8(omega, parameter)
         g = 0;
     end
 
+    solution = [ (-1 - i * sqrt(3)) / 2 (-1 + i * sqrt(3)) / 2 ];
+    % omega is the root of the equation: w^2 + w + 1 = 0
+
     try
-        w = omega;
+        w = solution(SIGMA);
     catch
-        warning('No valid OMEGA parameter provided! Continue with default value.');
-        w = (- 1 - i * sqrt(3)) / 2;
+        warning('No valid SIGMA = 1 or 2 parameter provided! Continue with default value.');
+        w = solution(1);
     end
 
     H10_omega = [

@@ -1,8 +1,9 @@
 % 20061205
-% W. Bruzda, name[at]alumni.uj.edu.pl | name = w.bruzda
+% W. Bruzda, name[at]alumni.uj.edu.pl : name = w.bruzda
 % http://chaos.if.uj.edu.pl/~karol/hadamard/
 % https://github.com/matrix-toolbox/
 
+% >> version % 9.1.0.441655 (R2016b)
 % >> a = (1 + rand) * pi / 2 + fix(rand * 2) * pi % single parameter "a" in (pi/2, pi] or (3*pi/2, 2*pi]
 % >> H = M6_1(a)
 % >> abs(H .* H'), norm(H * H' - 6 * eye(6), 'fro')

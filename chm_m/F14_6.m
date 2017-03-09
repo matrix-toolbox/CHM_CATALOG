@@ -1,8 +1,9 @@
-% 20061205 - w.bruzda[at]alumni.uj.edu.pl
-% W. Bruzda, name[at]alumni.uj.edu.pl | name = w.bruzda
+% 20061205
+% W. Bruzda, name[at]alumni.uj.edu.pl : name = w.bruzda
 % http://chaos.if.uj.edu.pl/~karol/hadamard/
 % https://github.com/matrix-toolbox/
 
+% >> version % 9.1.0.441655 (R2016b)
 % >> H = F14_6(rand(1, 6))
 % >> abs(H .* H'), norm(H * H' - 14 * eye(14), 'fro')
 
