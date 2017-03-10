@@ -5,10 +5,10 @@
 
 % >> version % 9.1.0.441655 (R2016b)
 % >> SIGMA = 1 % 2 3 ... 8
-% >> H = A15_0_SIGMA(SIGMA)
+% >> H = A15X_0(SIGMA)
 % >> abs(H .* H'), norm(H * H' - 15 * eye(15), 'fro')
 
-function H = A15_0_SIGMA(SIGMA)
+function H = A15X_0(SIGMA)
 
     A1 = [
         0 1 1 1 0 0 0 0 0 0 1 0 0 0 0; % Petersen adjacency matrices

@@ -9,7 +9,7 @@
 
 % >> version % 9.1.0.441655 (R2016b)
 % >> SIGMA = 1
-% >> H = C7_0_SIGMA(SIGMA)
+% >> H = C7X_0(SIGMA)
 % >> abs(H .* H'),  norm(H * H' - 7 * eye(7), 'fro')
 
 % SIGMA = 1 => C_{7A}^{(0)}
@@ -17,7 +17,7 @@
 % SIGMA = 3 => C_{7C}^{(0)}
 % SIGMA = 4 => C_{7D}^{(0)}
 
-function H = C7_0_SIGMA(SIGMA)
+function H = C7X_0(SIGMA)
 
     try
         if ((SIGMA == 1) || (SIGMA == 2))

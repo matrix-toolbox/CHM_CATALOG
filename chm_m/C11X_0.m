@@ -5,13 +5,13 @@
 
 % >> version % 9.1.0.441655 (R2016b)
 % >> SIGMA = 1
-% >> H = C11_0_SIGMA(SIGMA)
+% >> H = C11X_0(SIGMA)
 % >> abs(H .* H'), norm(H * H' - 11 * eye(11), 'fro')
 
 % SIGMA = 1 => C_11A
 % SIGMA = 2 => C_11B
 
-function H = C11_0_SIGMA(SIGMA)
+function H = C11X_0(SIGMA)
 
     try
         if (SIGMA == 1) 

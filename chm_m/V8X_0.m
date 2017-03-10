@@ -10,10 +10,10 @@
 
 % >> version % 9.1.0.441655 (R2016b)
 % >> SIGMA = 1 % 2, 3 or 4
-% >> H = V8_0_SIGMA(SIGMA)
+% >> H = V8X_0(SIGMA)
 % >> abs(H .* H'), norm(H * H' - 8 * eye(8), 'fro')
 
-function H = V8_0_SIGMA(SIGMA)
+function H = V8X_0(SIGMA)
 
     SIGMA_ARRAY = [
         -0.6508910153042045364155285204797 + i * 0.75917118372358007721802306013268, ...

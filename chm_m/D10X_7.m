@@ -5,10 +5,10 @@
 
 % >> version % 9.1.0.441655 (R2016b)
 % >> SIGMA = 1 % or 2
-% >> H = D10_7_SIGMA(SIGMA, parameter)
+% >> H = D10X_7(SIGMA, parameter)
 % >> abs(H .* H'), norm(H * H' - 10 * eye(10), 'fro')
 
-function H = D10_7_SIGMA(SIGMA, parameter)
+function H = D10X_7(SIGMA, parameter)
 
     try
         a = parameter(1, 1);

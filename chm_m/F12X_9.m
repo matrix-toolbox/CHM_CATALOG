@@ -5,10 +5,10 @@
 
 % >> version % 9.1.0.441655 (R2016b)
 % >> SIGMA = 1 % 2 3 or 4
-% >> H = F12_9(SIGMA, rand(1, 9))
+% >> H = F12X_9(SIGMA, rand(1, 9))
 % >> abs(H .* H'), norm(H * H' - 12 * eye(12), 'fro')
 
-function H = F12_9_SIGMA(SIGMA, parameter)
+function H = F12X_9(SIGMA, parameter)
 
     try
         a = parameter(1, 1);

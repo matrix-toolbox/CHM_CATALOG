@@ -5,13 +5,13 @@
 
 % >> version % 9.1.0.441655 (R2016b)
 % >> SIGMA = 1
-% >> H = C13_0_SIGMA(SIGMA)
+% >> H = C13X_0(SIGMA)
 % >> abs(H .* H'), norm(H * H' - 13 * eye(13), 'fro')
 
-% SIGMA = 1 => C_13A
-% SIGMA = 2 => C_13B
+% SIGMA = 1 => C_{13A}^{(0)}
+% SIGMA = 2 => C_{13B}^{(0)}
 
-function H = C13_0_SIGMA(SIGMA)
+function H = C13X_0(SIGMA)
 
     try
         if (SIGMA == 1),

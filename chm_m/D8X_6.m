@@ -5,10 +5,10 @@
 
 % >> version % 9.1.0.441655 (R2016b)
 % >> SIGMA = 1 % or 2
-% >> H = D8_6_SIGMA(SIGMA, rand(1, 6))
+% >> H = D8X_6(SIGMA, rand(1, 6))
 % >> abs(H .* H'), norm(H * H' - 8 * eye(8), 'fro')
 
-function H = D8_6_SIGMA(SIGMA, parameter)
+function H = D8X_6(SIGMA, parameter)
 
     try
         a = parameter(1, 1);

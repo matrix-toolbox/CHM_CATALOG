@@ -11,11 +11,11 @@
 
 % >> version % 9.1.0.441655 (R2016b)
 % >> SIGMA = 1 % 2 3 or 4
-% >> H = Q11_0_SIGMA(1);
+% >> H = Q11X_0(1);
 % >> abs(H .* H'), norm(H * H' - 11 * eye(11), 'fro')
-% >> defect(H, 'S', 1e-10); % matrix Q11_0 is isolated
+% >> defect(H, 'S', 1e-10); % matrix Q11X_0 is isolated
 
-function H = Q11_0_SIGMA(SIGMA)
+function H = Q11X_0(SIGMA)
 
     N = 11;
     gamma = sqrt(396 + 18 * (8468 + 12 * sqrt(12309))^(1/3) + 3 * (1829088 - 2592 * sqrt(12309))^(1/3)) / 3;

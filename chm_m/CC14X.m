@@ -7,7 +7,7 @@
 
 % ...
 
-function H = CC14_6_SIGMA(SIGMA_C7, parameter)
+function H = CC14X_6(SIGMA_C7, parameter)
 
     error('Not implemented!')
 
