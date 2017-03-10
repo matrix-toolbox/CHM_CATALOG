@@ -1,0 +1,82 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2507,         72]
+NotebookOptionsPosition[      2139,         56]
+NotebookOutlinePosition[      2573,         73]
+CellTagsIndexPosition[      2530,         70]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[StyleBox["20061105\nW. Bruzda, name[at]alumni.uj.edu.pl : name \
+= w.bruzda\nhttp://chaos.if.uj.edu.pl/~karol/hadamard/\n\
+http://github.com/matrix-toolbox/\n\n$VersionNumber (* 10.1 *)",
+ FontFamily->"Courier",
+ FontColor->GrayLevel[0.5]]], "Text",
+ CellChangeTimes->{{3.698124551004711*^9, 3.698124587465001*^9}, {
+   3.698124660614848*^9, 3.698124698326366*^9}, {3.6981248600179873`*^9, 
+   3.698124876026368*^9}, {3.6981252707237988`*^9, 3.698125279870418*^9}, {
+   3.698125334483575*^9, 3.698125414842833*^9}, {3.6981254781143637`*^9, 
+   3.698125484785162*^9}, {3.698125594781206*^9, 3.69812560550167*^9}, 
+   3.698125659728801*^9, {3.698134049382886*^9, 3.698134049730961*^9}, {
+   3.6981401559719543`*^9, 3.6981401560721703`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"F13\[Ellipsis]0", " ", "=", " ", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Exp", "[", 
+      RowBox[{"2", " ", "\[Pi]", " ", "\[ImaginaryI]", " ", "j", " ", 
+       RowBox[{"k", " ", "/", " ", "13"}]}], "]"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", " ", "0", ",", " ", 
+       RowBox[{"13", " ", "-", " ", "1"}]}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"k", ",", " ", "0", ",", 
+       RowBox[{"13", " ", "-", " ", "1"}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"F13\[Ellipsis]0", ".", 
+     RowBox[{"ConjugateTranspose", "[", "F13\[Ellipsis]0", "]"}]}], "//", 
+    "MatrixForm"}], "//", "N"}], "//", "Chop"}]}], "Input",
+ CellChangeTimes->{{3.698140966180998*^9, 3.698141004178503*^9}}]
+},
+WindowSize->{1272, 924},
+WindowMargins->{{168, Automatic}, {Automatic, 1}},
+PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
+FrontEndVersion->"10.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 23, \
+2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 752, 11, 119, "Text"],
+Cell[1313, 33, 822, 21, 46, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
