@@ -12,7 +12,7 @@ function H = D6_1(parameter)
     try
         p = parameter(1, 1);
     catch
-        warning('No valid parameter provided. Continue with default zero value!');
+        warning('No valid parameter provided! Continue with default zero value.');
         p = 0;
     end
 

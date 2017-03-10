@@ -1,18 +1,18 @@
-% 20061205
+% 20080526
 % W. Bruzda, name[at]alumni.uj.edu.pl : name = w.bruzda
 % http://chaos.if.uj.edu.pl/~karol/hadamard/
 % https://github.com/matrix-toolbox/
 
 % >> version % 9.1.0.441655 (R2016b)
-% >> H = N11B_0
+% >> H = N11C_0
 % >> abs(H .* H'), norm(H * H' - 11 * eye(11), 'fro')
 
-function H = N11B_0
+function H = N11C_0
 
     x = (3 - i * sqrt(7)) / 4;
-    a = - x;
-    b = + x;
-    y = - x^2;
+    a = + 1;
+    b = - 1;
+    y = + x';
 
     H = [
         1,  1,  1,  1,  1,  1,    1,    1,    1,    1,    1;
