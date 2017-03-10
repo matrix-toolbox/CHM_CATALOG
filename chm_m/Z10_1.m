@@ -12,7 +12,7 @@ function H = Z10_1(parameter)
     try
         a = parameter(1);
     catch
-        warning('No valid parameter provided! Continue with defaul zero value.');
+        warning('No valid parameter provided! Continue with default zero value.');
         a = 0;
     end
 
