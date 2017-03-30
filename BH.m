@@ -37,8 +37,7 @@
 % [16, 4, 1-2]
 % [16, 8, 1-2]
 
-% Note that here we swapped the convention!
-% Butsons belong to BH(N, q) instead of BH(q, N).
+% We follow the convention that Butson matrices belong to BH(N, q) instead of BH(q, N).
 % It should be called BH_q(N) to solve the problem of ambiguity...
 
 % Example of unitarity test:
@@ -266,7 +265,7 @@ function H = BH(M, Q, V)
     % Butson arrays of type BH(13, 6) taken from the thesis of Adam J. LaClair
     % "A Survey On Hadamard Matrices", UT, Knoxville, May 2016
     elseif isequal([M, Q, V], [13, 6, 1])
-        H = [ % M1, defect(M1) = 0
+        H = [ % M13A, defect(M13A) = 0
             0 0 0 0 0 0 0 0 0 0 0 0 0;
             0 5 5 4 4 4 4 2 2 2 1 1 1;
             0 5 5 1 2 2 2 4 4 4 1 1 4;
@@ -282,7 +281,7 @@ function H = BH(M, Q, V)
             0 4 2 5 4 2 1 5 1 4 4 2 1;
         ];
     elseif isequal([M, Q, V], [13, 6, 2]) 
-        H = [ % M2, defect(M2) = 1
+        H = [ % M13B, defect(M13B) = 1
             0 0 0 0 0 0 0 0 0 0 0 0 0;
             0 5 5 5 3 3 3 3 2 2 1 0 0;
             0 1 1 3 1 3 4 5 1 3 5 3 5;
@@ -298,7 +297,7 @@ function H = BH(M, Q, V)
             0 3 3 3 0 5 5 3 0 2 3 0 1;
         ];
     elseif isequal([M, Q, V], [13, 6, 3])
-        H = [ % M3, defect(M3) = 2
+        H = [ % M13C, defect(M13C) = 2
             0 0 0 0 0 0 0 0 0 0 0 0 0;
             0 5 5 5 4 3 3 2 2 2 2 0 0;
             0 2 4 2 0 1 4 1 2 4 4 0 4;
