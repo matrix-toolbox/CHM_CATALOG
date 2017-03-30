@@ -10,7 +10,7 @@
 % >> defect(H) % 2
 % >> norm(H * H' - 13 * eye(13), 'fro')
 
-function H = M13C(parameter)
+function H = M13C_2(parameter)
 
     try
         a = parameter(1, 1);
