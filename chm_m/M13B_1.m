@@ -1,8 +1,11 @@
 % 20170330
+% W. Bruzda, name[at]alumni.uj.edu.pl : name = w.bruzda
+% http://chaos.if.uj.edu.pl/~karol/hadamard/
+% https://github.com/matrix-toolbox/
 
-% Extension of the LaClair's matrix M13B to the 1-parametric affine family.
+% Extension of the A. LaClair's matrix M13B to the 1-parametric affine family.
 
-% Usage
+% >> version % 9.1.0.441655 (R2016b)
 % >> H = M13B_1(rand);
 % >> defect(H) % 1
 % >> norm(H * H' - 13 * eye(13), 'fro')

@@ -1,8 +1,11 @@
 % 20170330
+% W. Bruzda, name[at]alumni.uj.edu.pl : name = w.bruzda
+% http://chaos.if.uj.edu.pl/~karol/hadamard/
+% https://github.com/matrix-toolbox/
 
-% Extension of the LaClair's matrix M13C to the 2-parametric affine family.
+% Extension of the A. LaClair's matrix M13C to the 2-parametric affine family.
 
-% Usage
+% >> version % 9.1.0.411655 (2016b)
 % >> H = M13C_2(rand, rand);
 % >> defect(H) % 2
 % >> norm(H * H' - 13 * eye(13), 'fro')
