@@ -10,7 +10,14 @@
 % >> defect(H) % 1
 % >> norm(H * H' - 13 * eye(13), 'fro')
 
-function H = M13B_1(a)
+function H = M13B_1(parameter)
+
+    try
+        a = parameter(1, 1);
+    catch
+        warning('No valid parameter provided! Continue with default zero value.');
+        a = 0;
+    end
 
     M13_B = [
         0 0 0 0 0 0 0 0 0 0 0 0 0;

@@ -6,11 +6,20 @@
 % Extension of the A. LaClair's matrix M13C to the 2-parametric affine family.
 
 % >> version % 9.1.0.411655 (2016b)
-% >> H = M13C_2(rand, rand);
+% >> H = M13C_2(rand(1, 2));
 % >> defect(H) % 2
 % >> norm(H * H' - 13 * eye(13), 'fro')
 
-function H = M13C(a, b)
+function H = M13C(parameter)
+
+    try
+        a = parameter(1, 1);
+        b = parameter(1, 2);
+    catch
+        warning('No valid parameter provided! Continue with default zero value.');
+        a = 0;
+        b = 0;
+    end
 
     M13_C = [
         0 0 0 0 0 0 0 0 0 0 0 0 0;
