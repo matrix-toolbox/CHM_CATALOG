@@ -3,7 +3,7 @@
 % http://chaos.if.uj.edu.pl/~karol/hadamard/
 % https://github.com/matrix-toolbox/
 
-% Extension of the A. LaClair's matrix M13C to the 2-parametric affine family.
+% Extension of the A. LaClair's matrix M13C to the 2-parametric maximal affine family.
 
 % >> version % 9.1.0.411655 (2016b)
 % >> H = M13C_2(rand(1, 2));
