@@ -1,5 +1,5 @@
 % 20170117
-% W. Bruzda, name[at]alumni.uj.edu.pl : name = w.bruzda
+% W. Bruzda, name[at]uj.edu.pl : name = w.bruzda
 % http://chaos.if.uj.edu.pl/~karol/hadamard/
 % https://github.com/matrix-toolbox/
 

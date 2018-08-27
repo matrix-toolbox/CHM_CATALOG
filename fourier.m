@@ -1,11 +1,13 @@
 % 20170217
-% W. Bruzda, name[at]alumni.uj.edu.pl : name = w.bruzda
+% W. Bruzda, name[at]uj.edu.pl : name = w.bruzda
 % http://chaos.if.uj.edu.pl/~karol/hadamard/
 % https://github.com/matrix-toolbox/
 
 % >> version % 9.1.0.441655 (R2016b)
 % >> F16 = fourier(16, 'classic');
 % >> H25 = fourier(5, 'hermitian'); % squared dimension!
+
+% CHANGE FOURIER TO OTHER NAME OR CHECK NAMESPACES!
 
 function F = fourier(N, METHOD)
     switch METHOD

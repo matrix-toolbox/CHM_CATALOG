@@ -1,11 +1,10 @@
 # chm
 
-Set of Matlab and Mathematica scripts supporting the [catalogue](http://chaos.if.uj.edu.pl/~karol/hadamard/) of complex Hadamard matrices. Scripts were prepared and tested in:
+Set of Matlab scripts supporting the [catalogue](http://chaos.if.uj.edu.pl/~karol/hadamard/) of complex Hadamard matrices. Scripts were prepared and tested in:
 ```
 9.1.0.441655 (R2016b) % Matlab
-10.1 (* Mathematica *)
 ```
-respectively. Matlab scripts should also be runnable in Octave environment.
+Matlab scripts should also be runnable in Octave environment.
 
 ## nomenclature (Matlab)
 
@@ -27,3 +26,5 @@ Script names follow the convention proposed in the [catalogue](http://chaos.if.u
 
 >> H = Q11X_0(1)        % one of two possible realisations of Q11 matrix (which is isolated)
 ```
+
+## Mathematica users can easly adapt Matlab scrips using copy/paste procedure...

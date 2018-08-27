@@ -1,8 +1,9 @@
+function H = BH(M, Q, V)
 % 20161129
 % Srdjan Budishin
 % http://chaos.if.uj.edu.pl/~karol/hadamard/
 % http://github.com/matrix-toolbox/
-
+%
 % Script generates an unitary unimodular matrix H (Butson type Hadamard matrix).
 % M is the matrix size and Q is the number of phases.
 % If Q = M it generates a DFT matrix.
@@ -11,7 +12,7 @@
 % matrix will be generated.
 % The following values of [M, Q, V] are allowed
 % excluding Q = M (V is ommited if 1):
-
+%
 % [4, 2]
 % [6, 3]
 % [6, 4]
@@ -33,23 +34,21 @@
 % [14, 4]
 % [14, 6]
 % [14, 7]
+% [14, 10] % P. Lampio et al.
 % [16, 2, 1-5]
 % [16, 4, 1-2]
 % [16, 8, 1-2]
-
+%
 % We follow the convention that Butson matrices belong to BH(N, q) instead of BH(q, N).
 % It should be called BH_q(N) to solve the problem of ambiguity...
-
+%
 % Example of unitarity test:
-
+%
 % >> M = 16; Q = 8; V = 1;
 % >> H = butson(M, Q, V);
 % >> sum(sum(abs(H * H' - M * eye(M))))
-
+%
 % >> version % 9.1.0.441655 (R2016b)
-
-function H = BH(M, Q, V)
-
     if ~exist('V')
         V = 0;
     end
@@ -262,10 +261,10 @@ function H = BH(M, Q, V)
             0  3 24 10 22 34 27 21  6  9 12 24;
             0 15 12  2 26 14 27 33 30  9 24 12;
         ];
-    % Butson arrays of type BH(13, 6) taken from the thesis of Adam J. LaClair
-    % "A Survey On Hadamard Matrices", UT, Knoxville, May 2016
-    elseif isequal([M, Q, V], [13, 6, 1])
-        H = [ % M13A, defect(M13A) = 0
+   elseif isequal([M, Q, V], [13, 6, 1])
+         % Butson arrays of type BH(13, 6) taken from the thesis of Adam J. LaClair
+         % "A Survey On Hadamard Matrices", UT, Knoxville, May 2016
+         H = [ % M13A, defect(M13A) = 0
             0 0 0 0 0 0 0 0 0 0 0 0 0;
             0 5 5 4 4 4 4 2 2 2 1 1 1;
             0 5 5 1 2 2 2 4 4 4 1 1 4;
@@ -378,6 +377,23 @@ function H = BH(M, Q, V)
             0 4 2 1 1 2 4 3 0 3 5 6 6 5;
             0 3 0 5 4 4 5 1 6 3 6 1 2 2;
             0 2 5 2 0 6 6 4 3 1 5 1 3 4;
+        ];
+    elseif isequal([M, Q], [14, 10])
+        H = [
+            0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+            0 0 8 6 5 4 2 0 0 8 6 5 4 2;
+            0 0 8 6 5 4 2 5 5 3 1 0 9 7;
+            0 1 3 5 2 9 5 7 9 3 7 7 1 5;
+            0 2 4 4 9 6 9 9 4 5 1 6 7 1;
+            0 2 6 2 5 8 7 3 7 1 5 0 5 0;
+            0 4 0 2 3 4 7 9 5 8 7 2 9 5;
+            0 4 4 8 1 2 3 5 7 9 9 4 6 9;
+            0 5 8 0 1 6 0 4 2 4 6 6 2 8;
+            0 6 2 6 7 2 7 5 3 9 4 8 1 1;
+            0 6 2 1 7 2 2 0 8 4 4 8 6 6;
+            0 6 7 4 9 8 4 8 2 0 2 2 4 6;
+            0 8 2 8 3 7 8 4 0 6 2 2 6 4;
+            0 8 6 0 7 0 5 2 5 5 9 4 1 3;
         ];
     elseif isequal([M, Q, V], [16, 2, 1]) % H = hadamard(8);
         H = [
@@ -557,4 +573,6 @@ function H = BH(M, Q, V)
     H = exp(2 * pi * i * H / Q);
 
 end
+
+
 
