@@ -5,6 +5,7 @@ function F=FN(N)
 %            https://github.com/matrix-toolbox/
 % ------------------------------------------------------------------------------
 % Dephased Fourier matrix of size N.
+% This script is required by many other scripts: "F*.m", defining particular families stemming from F(N).
 %
 % >> H = FN(11);
 % ------------------------------------------------------------------------------
@@ -16,3 +17,4 @@ function F=FN(N)
     end, end
 
 end
+
