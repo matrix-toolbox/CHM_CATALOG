@@ -4,10 +4,11 @@ function [iiMax, nP, ZTolerance, YPattern, muFactor] = HH_10_12_1002()
 %            https://chaos.if.uj.edu.pl/~karol/hadamard/
 %            https://github.com/matrix-toolbox/
 % ------------------------------------------------------------------------------
-% Hermitian CHM of size N = 10 with generic d = 6 and #L = 106.
+% Hermitian CHM of size N = 10 with generic d = 12 and #L = 1002.
 % Convergence is quite fast and it seems not to depend on initial conditions.
 % It provides at least two Hermitian solutions:
-% (rare) BH(10, 6) with d = 8, #L = 6 and
+% (rare) BH(10, 6) with d = 8, #L = 6 ---> see BH_10_6.m
+% and
 % (frequent/generic) non-BH with d = 12, #L = 1002.
 % ------------------------------------------------------------------------------
 % Example(s) of solution:
