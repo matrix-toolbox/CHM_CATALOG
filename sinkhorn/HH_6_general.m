@@ -1,10 +1,10 @@
-function [iiMax, nP, ZTolerance, YPattern, muFactor] = HH_6_generic
+function [iiMax, nP, ZTolerance, YPattern, muFactor] = HH_6_general
 % ------------------------------------------------------------------------------
 % 2023-02-22 Wojciech Bruzda; name[at]uj.edu.pl : name = w.bruzda
 %            https://chaos.if.uj.edu.pl/~karol/hadamard/
 %            https://github.com/matrix-toolbox/
 % ------------------------------------------------------------------------------
-% Generic Hermitian case for N = 6, returns Y = Y^* : d(Y) = 4, #L(Y) = 34.
+% General Hermitian case for N = 6, returns Y = Y^* : d(Y) = 4, #L(Y) = 34.
 %
 % Call:
 % >> Y = solver(nthargout([1:5], @HH_6_generic)); summary(Y, 1e-8);
