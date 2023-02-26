@@ -8,7 +8,7 @@ function Y = SH_8_13_6B(p)
 % with generic d = 13 and #L = 6.
 % It stems from BH(8, 2).
 % It was originally found as a solution of "SH_8_3_142.m".
-% See also "SH_8_13_6A.m".
+% See "SH_8_13_6A.m".
 % ------------------------------------------------------------------------------
 
     a = exp(2j*pi* p(1));
