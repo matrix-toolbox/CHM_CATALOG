@@ -38,7 +38,7 @@ function M = weave(Aj, Bk)
 %
 % .............................................................................
 % As a curiosity:
-% If the free parameter if F4; x is of the form x = exp(2j*pi * n/d)
+% If the free parameter in F4; x is of the form x = exp(2j*pi * n/d)
 % for some non-negative integers n and d,
 % then matrix M is a Butson type matrix: BH(12, q),
 % where
