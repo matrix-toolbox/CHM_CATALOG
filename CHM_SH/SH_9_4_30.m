@@ -7,7 +7,7 @@ function Y = SH_9_4_30(p)
 % Symmetric 1-parameter family of CHM of order N = 9
 % with generic d = 4 and #L = 30
 % obtained from more general pattern: "SH_9_4_30_pattern.m".
-% It stemms from BH(9, 6).
+% It stems from BH(9, 6).
 % ------------------------------------------------------------------------------
 
     a = exp(2j*pi * p(1));
