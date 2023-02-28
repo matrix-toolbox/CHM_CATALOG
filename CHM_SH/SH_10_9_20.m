@@ -6,7 +6,7 @@ function Y = SH_10_9_20(p)
 % ------------------------------------------------------------------------------
 % Symmetric 1-parameter family of CHM of order N = 10
 % with generic d = 9 and #L = 20.
-% It stemms from BH(10, 4).
+% It stems from BH(10, 4).
 % It is a special solution of "SH_10_0_349B.m".
 % ------------------------------------------------------------------------------
 
