@@ -43,7 +43,7 @@ function [iiMax, nP, ZTolerance, YPattern, muFactor] = SH_10_0_1071()
 % p(34) = -0.006147578446285 + 0.999981103461084i;
 % p(35) =  0.485714985850429 + 0.874117241861936i;
 %
-% No other soulution found...
+% No other solution found...
 % ------------------------------------------------------------------------------
 
     iiMax = 40000;
