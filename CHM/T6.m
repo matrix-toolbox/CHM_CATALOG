@@ -12,8 +12,6 @@ function Y = T6(p)
 %  * sum of roots = -3
 %  * product of roots = 1
 %
-% It might be a part of B6 family...
-%
 % Generic values: d(Y) = 4, #L(Y) = 22
 % p = 1/4 --> d = 4, #L = 4, symmetric BH(6, 4)
 % p = 1/2 --> d = 4, #L = 4, Hermitian BH(6, 4)
