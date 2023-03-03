@@ -1,4 +1,4 @@
-function H = T8A
+function Y = T8A
 % ------------------------------------------------------------------------------
 % 2017-12-19 WB
 % 2018-01-01 Wojciech Bruzda; name[at]uj.edu.pl : name = w.bruzda
@@ -7,7 +7,7 @@ function H = T8A
 % ------------------------------------------------------------------------------
 % First attempt to T8(p) -- it is not a family yet...
 %
-% >> H = T8A;
+% >> Y = T8A;
 % ------------------------------------------------------------------------------
 
   a = -acot(1-sqrt(5))/2/pi;
@@ -16,7 +16,7 @@ function H = T8A
   X = b + i*c;
   Z = (i - 1 - exp(pi*i*3/10) + exp(pi*i*4/5) - X + i*X') / (1 - i * X*X);
   W = -i * Z * X*X;
-  T = [
+  Y = [
     1     1                      1                    1                      1                     1                1 1;
     1     W                      Z                    X                     -i*X'                  exp(i*pi*3/10)  -i exp(i*pi*9/5);
     1    -X                      i*X'                -i*Z'                   W'*exp(3*pi*i/2)      exp(i*pi*13/10) -i exp(i*pi*4/5);
@@ -26,6 +26,5 @@ function H = T8A
     1       exp(2*pi*i*(a+1/10)) exp(2*pi*i*(a+3/5))  exp(2*pi*i*(11/10-a))  exp(2*pi*i*(3/5-a))  -1  1 -1;
     1       exp(pi*i/5)          exp(pi*i/5)          exp(6*pi*i/5)          exp(6*pi*i/5)        -1 -1  1;
   ];
-  H = T;
 
 end
