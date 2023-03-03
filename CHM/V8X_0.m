@@ -9,7 +9,10 @@ function H = V8X(k)
 %
 % Courtesy of Veit Elser. Unpublished notes, 2011.
 %
-% OBSOLETE -- this matrix can be solved analytically, see: https://arxiv.org/abs/2204.11727
+% OBSOLETE -- this matrix can be solved analytically, see:
+% [1] https://arxiv.org/abs/2204.11727
+% [2] V8_ANALYTIC.m
+% [3] V8_ANALYTIC.nb
 % ------------------------------------------------------------------------------
 
     V_ARRAY = [
