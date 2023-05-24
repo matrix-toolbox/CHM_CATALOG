@@ -1,4 +1,4 @@
-function Y = SG_9_0+6
+function Y = SG_9_0_6
 % ------------------------------------------------------------------------------
 % 2022-12-28 Wojciech Bruzda; name[at]uj.edu.pl : name = w.bruzda
 %            https://chaos.if.uj.edu.pl/~karol/hadamard/
