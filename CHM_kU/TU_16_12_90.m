@@ -10,7 +10,7 @@ function Y = TU_16_12_90(p)
 % Usually this does not work, because
 %    nh(Z) != 0
 %    n1(Z) = 0
-% So, try to replace one variable with a dependence on another one, eg. : b --> 1/c/c (get rid of b).
+% So, try to replace one variable with something that depends on another one, eg. : b --> 1/c/c (get rid of b).
 % Check again nh(Z) and n1(Z).
 % Repeat this procedure until Z(a, b, ...) becomes CHM.
 % ------------------------------------------------------------------------------
