@@ -6,7 +6,7 @@ function Y = DXDsRD(X)
 %            https://chaos.if.uj.edu.pl/~karol/hadamard/
 %            https://github.com/matrix-toolbox/
 % ------------------------------------------------------------------------------
-% DXD for self R-dual CHM: X = R(X) for X in CHM. Description in "DXDsG.m".
+% DXD for self R-dual CHM: X = R(X) for X in CHM. Description in "DXDsRG.m".
 % ------------------------------------------------------------------------------
 
     addpath ../matrix_tool
