@@ -4,7 +4,7 @@ function B = B16q4(j)
 %            https://chaos.if.uj.edu.pl/~karol/hadamard/
 %            https://github.com/matrix-toolbox/
 % ------------------------------------------------------------------------------
-% First 64 matrices from the Butson Home;
+% First 64 matrices from Butson Home;
 % https://wiki.aalto.fi/display/Butson/Matrices+up+to+monomial+equivalence
 % ------------------------------------------------------------------------------
 
