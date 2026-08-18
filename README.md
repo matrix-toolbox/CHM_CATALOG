@@ -1,6 +1,6 @@
-# chm
+# CHM scripts
 
-Set of scripts supporting the [catalogue](http://chaos.if.uj.edu.pl/~karol/hadamard/) of complex Hadamard matrices. Scripts were prepared and tested in:
+Set of scripts supporting the [catalogue](https://matrix-toolbox.github.io/chm) of complex Hadamard matrices. Scripts were prepared and tested in:
 ```
 9.1.0.441655 (R2016b) % Matlab
 7.2.0 % Octave
@@ -9,7 +9,7 @@ Matlab scripts should also be runnable in Octave environment.
 
 ## nomenclature (Matlab)
 
-Script names follow the convention proposed in the [catalogue](http://chaos.if.uj.edu.pl/~karol/hadamard/?q=theory#notation).
+Script names follow the convention proposed in the [catalogue](https://matrix-toolbox.github.io/chm/theory.html#notation).
 However they are slightly simplified. In particular:
 - matrix name format is `YN` or `YNX` where
   - `Y` = symbol denoting the matrix (usually it is the first letter of the name of the author/finder)
