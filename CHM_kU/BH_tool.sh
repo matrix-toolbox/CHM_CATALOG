@@ -1,2 +1,0 @@
-
-$ cat BUTSON_HOME_FILE | sed 's/./& /g' > SPACE_SEPARATED_LETTERS
